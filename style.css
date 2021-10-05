@@ -1,0 +1,443 @@
+* {
+    font-family:'Roboto', Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;  
+    padding: 0;
+    color: #131313;
+    background-color: #f2f2f2; 
+}
+        
+html {
+    font-size: 18px;
+    }
+
+header {
+    position: sticky;
+    z-index: 1;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 0.5em 0.5em;
+    margin-bottom: 1em;
+    box-shadow: 5px 10px 20px -10px #4c4c4c;
+    background-image: url(Images/sportograf-169086669.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header a {
+    margin: 5px;   
+}
+
+header h1{ 
+    font-family: 'Monoton';
+    font-size: 2em;
+    color: #f2f2f2;
+    text-shadow: 2px 2px 2px black;
+    margin-left: 3em;
+    display: flex;
+    background-color: transparent;
+    text-decoration: none;
+	position: relative;
+	padding: 0.2em;
+}
+
+header h1:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 0%;
+	height: 100%;
+	border-bottom: 2px solid white;
+	transition: width 0.3s ease;
+}
+
+header h1:hover:after{
+	left: 0;
+	width: 100%;
+	transition: width .3s ease;
+}
+
+nav {
+    background-color: transparent;
+}
+
+.button{
+	text-decoration: none;
+	color: whitesmoke;
+    text-shadow: 2px 2px 2px black;
+    box-shadow: -2px 5px 5px rgb(80, 80, 80);
+	font-weight: bold;
+	font-size: 20px;
+	position: relative;
+	padding: 10px;
+    background-color: transparent;
+    
+}
+
+a.button {
+	border: 2px solid #bcbcbc;
+    border-radius: 50%;
+	transition: all 0.3s ease;
+	transform: translate(0px 10px);
+    margin-right:10px;
+}
+
+a.button:hover{
+	box-shadow: 0px 20px 20px -5px #fff;
+	transform: translate(0px 0px);
+    text-shadow: 0px 5px 5px rgb(0,0,0);
+}
+
+main {
+    position: relative;
+    margin: 1%;
+    top: 10px;  
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 0.5em;
+    margin-top:0.5em;
+    margin-bottom:1em;
+    box-shadow: 5px 10px 20px -10px #4c4c4c;
+    /*border: 3px solid black;*/
+    background-color: #f2f2f2;
+}
+/* section me */
+#me {
+    display: flex;
+    flex-flow: row;
+    align-items: left;
+    justify-content: space-between;
+    /*border: 3px solid red;*/
+    margin-bottom: 10px;
+    width: 80%;
+    box-shadow: 5px 10px 20px #4c4c4c;
+}
+
+div.xxx {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 70%; 
+    /*border: 3px solid green;*/
+    background-color: steelblue;
+}
+
+div.title {
+    display: flex;
+    flex-flow: column;
+    margin-right: 10px;
+    margin-top: 2em;
+}
+
+#me h1 {
+    color:#f2f2f2;
+    font-size: 2.5em;
+    align-items: flex-start;
+    background-color: steelblue;
+    font-family: 'Playfair Display', serif;
+}
+
+#me h4 {
+    color:#f2f2f2;
+    font-size: 1.5em;
+    background-color: steelblue;
+    font-family: 'Playfair Display', serif;
+}
+
+/* section portrait */
+.photo {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    background-color: steelblue;    
+}
+
+#portrait-photo {
+    width: 50%;
+}
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* section career */
+
+#career {
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    /*border: 3px solid blue;*/
+    padding: 1em 0;
+}
+
+.career-title  {
+    border-top: 2px solid #131313;
+    border-bottom: 2px solid #131313;
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+}
+
+.career-container {
+    width: 60%;
+    padding: 10px 0;
+    margin: 5px 0;
+}
+
+#career-gallery {
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    /*border: 3px solid blue;*/
+    padding: 1em 0;
+}
+
+.career-gallery-container {
+    display: flex;
+    width: 80%;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    /*border: 3px solid green;*/
+    background-color: steelblue;
+    box-shadow: 5px 10px 20px #4c4c4c;   
+}
+
+#hobby_1,
+#hobby_4 {
+    width: 25%;
+    margin: 1em 2em;
+    box-shadow: 5px 10px 20px #4c4c4c;
+}
+
+#hobby_2,
+#hobby_3 {
+    width: 35%;
+    margin: 1em 2em;
+    box-shadow: 5px 10px 20px #4c4c4c;
+}
+
+/* section dream */
+
+#dream {
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    /*border: 3px solid blue;*/
+    padding: 1em 0;
+}
+
+.dream-title  {
+    border-top: 2px solid #131313;
+    border-bottom: 2px solid #131313;
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+}
+
+.dream-container {
+    width: 60%;
+    padding: 10px 0;
+    margin: 5px 0;
+}
+
+/* section greeting */
+
+#greeting {
+    display: flex;
+    width: 100%;
+    flex-flow: row;
+    align-items: left;
+    justify-content: space-between;
+    /*border: 3px solid blue;*/
+    background-color: #f2f2f2;
+    padding: 1em 0;
+}
+
+div.yyy {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width: 100%; 
+    /*border: 3px solid green;*/
+    background-color: #f2f2f2;
+}
+
+div.greeting {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    /*border: 3px solid yellow;*/
+    width: 96%;
+    padding: 1em 1em;
+    background-color: transparent;    
+}
+
+.social-media {
+    float: right;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5em;
+    background-color: transparent;
+    /*border: 3px solid pink;*/
+}
+
+#fb,
+#ig,
+#li,
+#gh,
+#em,
+#yt {
+    width: 50px;
+    margin-right: 1em;
+    z-index: 3;
+    background-color: transparent;
+}
+
+a {
+    background-color: transparent;
+    z-index: 1;
+}
+
+.greeting h3,
+.greeting h4,
+.greeting p {
+    background-color: transparent;
+    color: #131313;
+    
+}
+
+.greeting h4,
+.greeting p{
+    color: #131313;
+   
+} 
+
+@media only screen and (max-width: 568px) {
+
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 2;
+    height: auto;
+}
+
+header h1 {
+    font-size: 1em;
+}
+
+.button {
+        font-size: 10px;
+        padding: 2px;
+    }
+
+#me {
+    display: flex;
+    flex-direction: column;
+}
+div.xxx {
+    width: 100%;
+}
+
+div.title {
+    width: 85%;
+}
+
+#portrait-photo {
+    width: 85%;
+}
+    
+.button {
+    font-size: 10px;
+    padding: 2px;
+}
+.career-gallery-container {
+    display: flex;
+    flex-direction: column;
+}
+
+}
+@media only screen and (max-width: 728px){
+
+    header nav{
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 2;
+        height: auto;
+        
+    }
+    header h1 {
+        font-size: 1.3em;
+    }
+
+    header {
+        height: auto;
+    }    
+    #me {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.xxx {
+        width: 100%;
+    }
+
+    div.title {
+        width: 85%;
+    }
+    
+    #portrait-photo {
+        width: 85%;
+    }
+
+    .button {
+        font-size: 15px;
+        padding: 2px;
+    }
+
+    #me h1,
+    #me h4 {
+        font-size: 1rem;
+    }
+    .career-gallery-container {
+        display: flex;
+        flex-direction: column;
+    }
+    #hobby_1,
+    #hobby_4 {
+        width: 70%;
+    }
+    #hobby_2,
+    #hobby_3 {
+    width: 70%;
+    }
+
+    #fb, #ig, #li, #gh, #em, #yt {
+        width: 25px;
+        margin-right: 1em;
+        z-index: 3;
+        background-color: transparent;
+        }
+
+}

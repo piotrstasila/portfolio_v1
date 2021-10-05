@@ -1,0 +1,312 @@
+* {
+    font-family:'Roboto', Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;  
+    padding: 0;
+    color: #131313;
+    background-color: #f2f2f2; 
+    
+}
+        
+body,
+html {
+    font-size: 16px;
+    height: 100%;
+    
+}
+
+
+main {
+    height: 95%;
+}
+
+header {
+    position: sticky;
+    z-index: 1;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 0.5em 0.5em;
+    margin-bottom: 1em;
+    box-shadow: 5px 10px 20px -10px #4c4c4c;
+    background-image: url(Images/sportograf-169086669.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header a {
+    margin: 5px;   
+}
+
+header h1{ 
+    font-family: 'Monoton';
+    font-size: 2em;
+    color: #f2f2f2;
+    text-shadow: 2px 2px 2px black;
+    margin-left: 3em;
+    display: flex;
+    background-color: transparent;
+    text-decoration: none;
+	position: relative;
+	padding: 0.2em;
+}
+
+header h1:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 0%;
+	height: 100%;
+	border-bottom: 2px solid white;
+	transition: width 0.3s ease;
+}
+
+header h1:hover:after{
+	left: 0;
+	width: 100%;
+	transition: width .3s ease;
+}
+
+nav {
+    background-color: transparent;
+}
+
+.button{
+	text-decoration: none;
+	color: whitesmoke;
+    text-shadow: 2px 2px 2px black;
+    box-shadow: -2px 5px 5px rgb(80, 80, 80);
+	font-weight: bold;
+	font-size: 20px;
+	position: relative;
+	padding: 10px;
+    background-color: transparent;
+    
+}
+
+a.button {
+	border: 2px solid #bcbcbc;
+    border-radius: 50%;
+	transition: all 0.3s ease;
+	transform: translate(0px 10px);
+    margin-right:10px;
+}
+
+a.button:hover{
+	box-shadow: 0px 20px 20px -5px #fff;
+	transform: translate(0px 0px);
+    text-shadow: 0px 5px 5px rgb(0,0,0);
+}
+
+
+/*parallax try*/
+
+.pimg1, .pimg2, .pimg3, .pimg4, .pimg5, .pimg6, .pimg7, .pimg8, .pimg9, .pimg0, .pimga, .pimgb, .pimgc, .pimgd, .pimg10{
+    position: relative;
+    /*opacity: 0.80;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.pimg1 {
+    background-image: url(Images/IMG_2426.jpg);
+    min-height: 100%;
+    
+}
+.pimg2 {
+    background-image: url(Images/IMG_2274.jpg);
+    min-height: 100%;
+}
+.pimg3 {
+    background-image: url(Images/IMG_1508.jpg);
+    min-height: 100%;
+}
+
+.pimg4 {
+    background-image: url(Images/IMG_0982.JPG);
+    min-height: 100%;
+}
+
+.pimg5 {
+    background-image: url(Images/IMG_0782.jpg);
+    min-height: 100%;
+}
+
+.pimg6 {
+    background-image: url(Images/e320d9d7-a9e3-4a87-8653-b27c81a08d13.JPG);
+    min-height: 100%;
+}
+
+.pimg7 {
+    background-image: url(Images/Bali.JPG);
+    min-height: 100%;
+}
+
+.pimg8 {
+    background-image: url(Images/Beziers\ france.jpg);
+    min-height: 100%;
+}
+
+.pimg9 {
+    background-image: url(Images/cyprus.jpg);
+    min-height: 100%;
+}
+.pimg0 {
+    background-image: url(Images/Glettrense.JPG);
+    min-height: 100%;
+}
+
+.pimga {
+    background-image: url(Images/Lausanne.JPG);
+    min-height: 100%;
+}
+
+.pimgb {
+    background-image: url(Images/NewYork.JPG);
+    min-height: 100%;
+}
+
+.pimgc {
+    background-image: url(Images/Spain.jpg);
+    min-height: 100%;
+}
+
+.pimgd {
+    background-image: url(Images/Valais.JPG);
+    min-height: 100%;
+}
+
+.pimg10 {
+    background-image: url(Images/Piotr.JPG);
+    min-height: 390px;
+    max-height: 400px;
+}
+
+.section {
+    padding: 50px 80px;
+    text-align: center;
+}
+
+.section-light {
+    background-color: #f2f2f2;
+    color: #666;
+}
+
+.section-dark p,
+.section-dark h2 {
+    background-color: inherit;
+    color: inherit;
+}
+
+.section-dark {
+    background-color: #303133;
+    color: #ddd;
+}
+
+.border, .ptext {
+    background-color: #666;
+    color: #fff;
+    padding: 10px;
+        
+}
+.trans {
+    background-color: transparent;
+}
+
+.ptext {
+    background-color: transparent;
+    position: absolute;
+    top:50%;
+    width:100%;
+    text-align: center;
+    font-size:27px;
+    letter-spacing: 8;
+    text-transform: uppercase;
+}
+
+/*footer section*/
+
+footer {
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.social-media {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 5em;
+    background-color: transparent;
+}
+
+#fb,
+#ig,
+#li,
+#gh,
+#em,
+#yt {
+    width: 50px;
+    margin-right: 1em;
+    z-index: 3;
+    background-color: transparent;
+}
+
+i {
+    background-color: transparent;
+    color: #f2f2f2;
+}
+
+@media only screen and (max-width: 568px){
+    .pimg1, .pimg2, .pimg3, .pimg4, .pimg5, .pimg6, .pimg7, .pimg8, .pimg9, .pimg0, .pimga, .pimgb,.pimgc, .pimgd, .pimg10 {
+        background-attachment: scroll;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 2;
+        height: auto;
+        
+    }
+    header h1 {
+        font-size: 1em;
+    }
+               
+    .button {
+        font-size: 10px;
+        padding: 2px;
+    }
+    
+@media only screen and (max-width: 728px){
+    
+    header nav{
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 2;
+            height: auto;
+    }
+
+    header {
+        height: auto;
+    }
+
+    header h1 {
+            font-size: 1.3em;
+    }
+                    
+    .button {
+            font-size: 15px;
+            padding: 2px;
+    }  
+}
