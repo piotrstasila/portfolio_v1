@@ -287,8 +287,13 @@ i {
         font-size: 10px;
         padding: 2px;
     }
+}
     
 @media only screen and (max-width: 728px){
+	
+     .pimg1, .pimg2, .pimg3, .pimg4, .pimg5, .pimg6, .pimg7, .pimg8, .pimg9, .pimg0, .pimga, .pimgb,.pimgc, .pimgd, .pimg10 {
+        background-attachment: scroll;
+    }
     
     header nav{
             display: flex;
